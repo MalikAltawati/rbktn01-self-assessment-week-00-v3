@@ -12,45 +12,53 @@
 // }
 //
 // EXAMPLE:
-//
-// var familyTree = {
-//   'firstName': 'Beth',
-//   'lastName': 'Johnson',
-//   'location': 'San Francisco',
-//   'children': [
-//     {
-//       'firstName': 'Beth Jr.',
-//       'lastName': 'Johnson',
-//       'location': 'Berkeley',
-//       'children': [
-//         {
-//           'firstName': 'Smitty',
-//           'lastName': 'Won',
-//           'location': 'Beijing',
-//           'children': []
-//         }
-//       ]
-//     },
-//     {
-//       'firstName': 'Joshie',
-//       'lastName': 'Wyattson',
-//       'location': 'Berkeley',
-//       'children': []
-//     }
-//   ]
-// };
-//
-// var livesInBerkeley = function (familyMember) {
-//   return familyMember.location === 'Berkeley';
-// }
-//
-// filterFamilyMembers(familyTree, livesInBerkeley)
-//
-// returns ['Beth Jr. Johnson', 'Joshie Wyattson'];
+ var familyTree = {
+   'firstName': 'Beth',
+   'lastName': 'Johnson',
+   'location': 'San Francisco',
+   'children': [
+     {
+       'firstName': 'Beth Jr.',
+       'lastName': 'Johnson',
+       'location': 'Berkeley',
+       'children': [
+         {
+           'firstName': 'Smitty',
+           'lastName': 'Won',
+           'location': 'Beijing',
+           'children': []
+         }
+       ]
+     },
+     {
+       'firstName': 'Joshie',
+       'lastName': 'Wyattson',
+       'location': 'Berkeley',
+       'children': []
+     }
+   ]
+ };
+
+ var livesInBerkeley = function (familyMember) {
+ return familyMember.location === 'Berkeley';
+ }
+
+filterFamilyMembers(familyTree, livesInBerkeley)
+
+ returns ['Beth Jr. Johnson', 'Joshie Wyattson'];
 
 
 
+var arr = [];
 var filterFamilyMembers = function (familyTree, truthTest) {
+
   // All your code in this function body
-};
+
+  /////////// I want to loop throgh the children and get its values with recursion untill its empty
+  // I countnt do it
+
+ arr.push(familyTree.firstName , familyTree.lastName , familyTree.location , familyTree.children)
+
+ return  arr
+ }; 
 
